@@ -74,8 +74,7 @@ impl ELChainReader {
 
         let contract_delegation_manager = DelegationManager::new(delegation_manager, provider);
 
-        let slasher = Address:ZERO;
-        let DelegationManager::slasherReturn { _0: slasher_addr } = slasher;
+        let slasher = Address::ZERO;
 
         Ok(Self {
             _logger,
